@@ -239,10 +239,11 @@ section:last-child {
 		{
 			display: none !important;
 		}
+		.mainDetails {
+			padding: 0px 35px;}
 		@page
 		{
-			#cv {
-				margin: 0 ;}
+
 		}
 }
 
