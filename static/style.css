@@ -241,10 +241,9 @@ section:last-child {
 		}
 		.mainDetails {
 			padding: 0px 35px;}
-		@page
-		{
 
-		}
+
+		html, body {background: #FFFFFF; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #00000;}
 }
 
 @-webkit-keyframes reset {
