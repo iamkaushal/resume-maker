@@ -15,6 +15,25 @@ html, body {background: #696969; font-family: 'Lato', helvetica, arial, sans-ser
 
 .clear {clear: both;}
 
+
+#printbutton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+		 margin: 10px auto;
+
+}
+
+#achieve
+{
+	margin-bottom:10px;
+}
+
 p {
 	font-size: 1em;
 	line-height: 1.4em;
