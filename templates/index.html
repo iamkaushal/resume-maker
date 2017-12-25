@@ -1,305 +1,90 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : StoneWork
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140228
+
+-->
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+<link href="{{ url_for('static', filename='default.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ url_for('static', filename='fonts.css')}}" rel="stylesheet" type="text/css" media="all" />
 
-	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js" > </script>
-	<script type="text/javascript">
-
-		 function printDiv(divName) {
-		 var printContents = document.getElementById(divName).innerHTML;
-		 var originalContents = document.body.innerHTML;
-
-		 document.body.innerHTML = printContents;
-
-		 window.print();
-
-		 document.body.innerHTML = originalContents;
-		}
-
-	</script>
-
-<title contenteditable="True">Kaushal Sharma - Curriculum Vitae</title>
-
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Kaushal Sharma."/>
-<meta charset="UTF-8">
-
-<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
-<link  href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
-
-
-
-
-<body id="top">
-
-<div contenteditable="True" id="cv" class="instaFade">
-
-
-	<!-- left area -->
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="{{ url_for('static', filename='headshot.jpg')}}" alt="University Logo" />
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Résumé Maker</a></h1>
 		</div>
-
-		<div id="name">
-			<h2 class="quickFade delayTwo">Kaushal Sharma</h2>
-			<h3 class="quickFade delayThree">B.Tech (2015- Present)</h3>
-			<h3 class="quickFade delayThree">I.P. University</h3>
-		</div>
-
-		<div id="contactDetails" class="quickFade delayFour">
+		<div id="menu">
 			<ul>
-				<li>e: <a href="mailto:kaushalsharma880@gmail.com" target="_blank">me@iamkaushal.com</a></li>
-				<li>w: <a href="http://www.kaushalsharma.me">www.kaushalsharma.me</a></li>
-				<li>m: (+91)-7042268046</li>
+				<li class="active"><a href="{{url_for('index')}}" accesskey="1" title="">Homepage</a></li>
+				<li><a href="{{url_for('about')}}" accesskey="4" title="">Instructions</a></li>
+				<!-- <li><a href="#" accesskey="2" title="">Cover Letters</a></li> -->
+				<li><a href="{{url_for('about')}}" accesskey="3" title="">About Us</a></li>
+				<li><a href="{{url_for('contact')}}" accesskey="5" title="">Contact</a></li>
 			</ul>
 		</div>
-		<div class="clear"></div>
 	</div>
-
-	<hr>
-
-	<div id="mainArea" class="quickFade delayFive">
-
-		<!-- Objective -->
-
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>Objective</h1>
-				</div>
-
-				<div class="sectionContent">
-					<p>To work in an organization where culture of freedom and working for initiatives is ensured, facilitating my contribution through thoughts and action to the company’s vision and thus achieve self development by playing a significant role in building the organization.</p>
-				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-		<!-- Work Experience -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Work Experience</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>Software Developer Intern at LawFacto</h2>
-					<p class="subDetails">Sep 2017 - Present</p>
-					<p>Analysed app usage statistics to recommend items based on user's preference.</p>
-				</article>
-
-				<article>
-					<h2>Web Developer Intern at WebView Solutions</h2>
-					<p class="subDetails">June 2017 - July 2017</p>
-					<p>Designed methods to improve the existing unit test mechanism.</p>
-				</article>
-
-				<article>
-					<h2>Web Developer Intern at LiveSmartly</h2>
-					<p class="subDetails">April 2017 - May 2017</p>
-					<p>Improved user experience and load time.</p>
-				</article>
-
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-		<!-- Publications -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Publications</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>Voice Based Application Design for visually impaired people and enabling them to use Gmail Services</h2>
-					<p class="subDetails"> 2017</p>
-					<p>IEEE conference Paper</p>
-				</article>
-
-
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-		<!-- Skills -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Key Skills</h1>
-			</div>
-
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>C/C++</li>
-					<li>Python</li>
-					<li>JavaScript</li>
-					<li>HTML</li>
-					<li>MYSQL</li>
-					<li>Data Structures</li>
-					<li>Algorithms</li>
-					<li>Java</li>
-					<li>NodeJs</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-		<!-- Education -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>Bachelor of Technology (B.Tech), (ECE) (2015 - 2019)</h2>
-					<p class="subDetails">Ambedkar Institute Of Advanced Communication Technologies & Research, New Delhi</p>
-					<p>GPA 8.0/10.0</p>
-				</article>
-
-				<article>
-					<h2>CS50X Harvard University</h2>
-					<p class="subDetails">EdX - 2017</p>
-					<p></p>
-				</article>
-
-				<article>
-					<h2>XII (Senior Secondary), Science</h2>
-					<p class="subDetails">CBSE Board (RSBV) - 2014</p>
-					<p>Percentage : 89 % </p>
-				</article>
-
-				<article>
-					<h2>X (Secondary)</h2>
-					<p class="subDetails">CBSE Board (Everest Public School) - 2012</p>
-					<p>CGPA 9.0</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-		<!-- Projects  -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Projects</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>Stock Trading Website</h2>
-					<p class="subDetails">Aug 2017 - Oct 2017</p>
-					<p>Implemented a stock trading website using Yahoo finance for real time data of stocks and python with flask as web framework.</p>
-				</article>
-
-				<article>
-					<h2>Web Scrapper and Automation</h2>
-					<p class="subDetails">July 2017 </p>
-					<p>Created a web scraper using Beautiful Soup, Selenium and requests in python which can automate a browser and scrape data from various sites</p>
-				</article>
-
-				<article>
-					<h2>Sentiment Analysis on Twitter</h2>
-					<p class="subDetails">June 2017 </p>
-					<p>Created a Opinion Mining app using twitter apps, which analyse the tweets from a twitter handle and represents the sentiments in form a pie chart.
-					Implemented on python and used flask as web framework.</p>
-				</article>
-
-				<article>
-					<h2>Spell Checker</h2>
-					<p class="subDetails">Feb 2017 - Mar 2017</p>
-					<p>Created a spell checker by implementing a dictionary using Hash Table in C.</p>
-				</article>
-
-				<article>
-					<h2>Intelligent Autonomous Robot Using Image Processing.</h2>
-					<p class="subDetails">Nov 2016 - Feb 2017</p>
-					<p>An autonomous simple robot designed to explore harsh places. It takes the feed from a camera wirelessly which works like a satellite and helps the robot to track the arena. Used Python and embedded C for the project. Sponsored by IIT Bombay.</p>
-				</article>
-
-				<article>
-					<h2>Weather Forecasting Web App</h2>
-					<p class="subDetails">October 2016 - Nov 2016</p>
-					<p>Created a current weather forecast app using Open weather forecast API using Node js and Express as server side framework. Then deployed my app on Heroku.</p>
-				</article>
-
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-		<!-- Achievements / Positions of Responsibility  -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Achievements</h1>
-			</div>
-			<!-- <br> -->
-
-			<div class="sectionContent">
-				<ul>
-					<li>
-						<article>
-							<p id="achieve" >Qualified for Semi-finals in E-Yantra 2016</p>
-						</article>
-					</li>
-
-					<li>
-						<article>
-							<p id="achieve" >Secured 2nd Rank in Delhi in state level quiz competition -2013.</p>
-						</article>
-					</li>
-				</ul>
-
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<hr>
-
-
-		<!-- Achievements / Positions of Responsibility  -->
-		<section>
-			<div class="sectionTitle">
-				<h1>Extracurriculars</h1>
-			</div>
-			<!-- <br> -->
-			<div class="sectionContent" >
-				<ul>
-					<li>
-						<article>
-							<p id="achieve"> Attended a 3-day workshop on Image sensing satellute development.</p>
-						</article>
-					</li>
-
-					<li>
-						<article>
-							<p id="achieve">Secured 1st position in the National level contest.</p>
-						</article>
-					</li>
-				</ul>
-
-			</div>
-			<div class="clear"></div>
-		</section>
-
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Fast. Easy to Use. Professional.</h2>
+			<span class="byline">Create, edit and share your resume in minutes</span>
+		</div>
+		<ul class="actions">
+			<li><a href="{{url_for('resume')}}" class="button">Build My Resume</a></li>
+		</ul>
 	</div>
 </div>
-
-<input id = "printbutton"  type="button" onclick="print()" value="Print Your Resume" />
-
-
+<div id="wrapper">
+	<div id="three-column" class="container">
+		<div class="title">
+			<h2>Best resume Builder Online</h2>
+			<span class="byline">Create a Personalized, Job-Worthy Resume in Minutes</span>
+		</div>
+		<div class="boxA">
+			<span class="fa fa-cloud-download"></span>
+			<p>Create an individual URL for your online resume.</p>
+			<!-- <a href="#" class="button button-alt">More Info</a> -->
+		</div>
+		<div class="boxB">
+			<span class="fa fa-cogs"></span>
+			<p>Edit readily available professional templates.</p>
+			<!-- <a href="#" class="button button-alt">More Info</a> -->
+		</div>
+		<div class="boxC">
+			<span class="fa fa-wrench"></span>
+			<p>publish and download your resumes any time you want.</p>
+			<!-- <a href="#" class="button button-alt">More Info</a> -->
+		</div>
+	</div>
+</div>
+<div id="welcome">
+	<div class="container">
+		<div class="title">
+			<h2>Customized Resumes & Cover Letters</h2>
+			<span class="byline">Resume Builder lets you create a professional-looking resume in a click.</span>
+		</div>
+		<p>A free online tool that helps you create your resume quickly and professionally. Without the hassle and struggle of figuring out how to format everything. With a good resume, you have a passport to a better job. </p>
+		<ul class="actions">
+			<li><a href="#" class="button">Get Started</a></li>
+		</ul>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; All rights reserved. | Made with Love by <a href="https://www.kaushalsharma.me/">Kaushal Sharma</a> </p>
+</div>
 </body>
 </html>
