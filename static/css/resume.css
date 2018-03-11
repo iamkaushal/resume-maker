@@ -15,30 +15,23 @@ html, body {background: #696969; font-family: 'Lato', helvetica, arial, sans-ser
 
 .clear {clear: both;}
 
-@page {
-  size: A4; */
-   margin: 10px;
-}
+
 @media print {
-  /* ... the rest of the rules ... */
-
-  #cv {
-      width: 110%;
-      margin: 0px ;
-  }
-  #printbutton
-  {
-    display: none !important;
-  }
-
-  .mainDetails {
-    padding: 0px 0px;
-     }
+    #cv {
+        width: 110%;
+				margin: 0px ;
+    }
+		#printbutton
+		{
+			display: none !important;
+		}
+		.mainDetails {
+			padding: 0px 35px;}
 
 
-  html, body {background: #FFFFFF; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #00000;}
-
+		html, body {background: #FFFFFF; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #00000;}
 }
+
 
 
 #printbutton {
