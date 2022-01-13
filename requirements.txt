@@ -7,4 +7,4 @@ itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe
 olefile==0.44
-Pillow==4.3.0
+Pillow==9.0.0
